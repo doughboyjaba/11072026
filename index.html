@@ -146,35 +146,20 @@
 
         /* Hero Image Photo Frame */
         .photo-container {
-            width: 260px;
-            height: 260px;
+            width: 320px;
+            height: 420px;
             margin: 0 auto 30px;
             border-radius: 4px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(197, 168, 128, 0.15);
-            background-color: #ddd;
             position: relative;
         }
         .photo-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
-        /* Fallback placeholder if image is missing */
-        .photo-placeholder {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(45deg, #222, #444);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-family: var(--font-serif);
-            font-size: 14px;
-            text-align: center;
-            padding: 20px;
-        }
-
         .waiting-text {
             font-size: 12px;
             letter-spacing: 5px;
@@ -423,10 +408,7 @@
             <div class="short-line"></div>
             
             <div class="photo-container">
-                <!-- Replace 'wedding-photo.jpg' with your actual image path later -->
-                <img src="wedding-photo.jpg" alt="Виктория и Антон" onerror="this.style.display='none';">
-                <div class="photo-placeholder">
-                </div>
+                <img src="./wedding-photo.jpg" alt="Виктория и Антон">
             </div>
             
             <div class="waiting-text">Ждём вас</div>
